@@ -25,16 +25,16 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">softAssertion</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Priority</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">9.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">softAssertion &#8212; failed</th></tr>
-<tr class="failedodd"><td>class02.HardAssertions</td><td><a href="#m1"><b>verifyTheErrorMessage</b> (smoke) </a></td><td class="numi">1</td><td>1687482518288</td><td class="numi">984</td></tr>
-<tr><th colspan="5">softAssertion &#8212; passed</th></tr>
-<tr class="passedodd"><td>class02.SoftAssertions</td><td><a href="#m2"><b>verifyTheWelcomeMessage</b> (regression) </a></td><td class="numi">1</td><td>1687482513326</td><td class="numi">2375</td></tr>
+<tr id="t1"><th colspan="5">Priority &#8212; failed</th></tr>
+<tr class="failedodd"><td>class02.HardAssertions</td><td><a href="#m1"><b>verifyTheErrorMessage</b> (smoke) </a></td><td class="numi">1</td><td>1688753021670</td><td class="numi">801</td></tr>
+<tr><th colspan="5">Priority &#8212; passed</th></tr>
+<tr class="passedodd"><td>class02.SoftAssertions</td><td><a href="#m2"><b>verifyTheWelcomeMessage</b> (regression) </a></td><td class="numi">1</td><td>1688753017075</td><td class="numi">1931</td></tr>
 </table>
-<h1>softAssertion</h1>
+<h1>Priority</h1>
 <h2 id="m1">class02.HardAssertions:verifyTheErrorMessage</h2>
 <div>
 <div class="stacktrace">java.lang.AssertionError: expected [Invalid credential] but found [Invalid credentials]
@@ -44,7 +44,7 @@ td,th {border:1px solid #009;padding:.25em .5em}
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at class02.HardAssertions.verifyTheErrorMessage(HardAssertions.java:58)
+	at class02.HardAssertions.verifyTheErrorMessage(HardAssertions.java:54)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

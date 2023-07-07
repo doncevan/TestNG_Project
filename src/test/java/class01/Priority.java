@@ -4,32 +4,32 @@ import org.testng.annotations.Test;
 
 public class Priority {
     @Test(priority = 4, groups = "smoke")
-    public void Atest() {
+    public void A_test() {
 
         System.out.println("i am A test");
     }
 
     @Test(priority = 3)
-    public void Btest() {
+    public void B_test() {
 
         System.out.println("i am B test");
     }
 
     @Test(priority = 2)
-    public void Ctest() {
+    public void C_test() {
 
         System.out.println("i am C test");
     }
 
     @Test(priority = 1)
-    public void Dtest() {
+    public void D_test() {
 
         System.out.println("i am D test");
     }
 
     @Test
-    public void ABtest() {
-        System.out.println("i am test D");
+    public void AB_test() {
+        System.out.println("i am test AB");
     }
 //    names with no priority beside them are the highest priority
 }

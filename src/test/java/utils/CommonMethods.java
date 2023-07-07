@@ -60,8 +60,12 @@ public class CommonMethods {
     public static void takeScreenshot(String fileName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File screenShot = ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenShot, new File(System.getProperty("user.dir") + "\\Files\\Screenshots\\" + fileName + ".png"));
+        FileUtils.copyFile(screenShot, new File(System.getProperty("user.dir") + "\\Files\\Screenshots\\" + fileName+".png"));
+
     }
 }
+
+
+
 
 

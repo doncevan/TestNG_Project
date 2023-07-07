@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class Assertions {
     //    whenever hard assertions have been implemented
-//    a failure of one Assertion leads to dismissal of the test case
+//    a failure of one Assertion leads to dismissal of the test case,
 //    and it never even checks for other assertions
     @Test
     public void hardAssert() {
@@ -24,11 +24,11 @@ public class Assertions {
 //    no matter if your assertion fails, it will still continue to check other assertions
     @Test
     public void softAssert() {
-        //        i am getting this information from the WebElement on a Website
+        //      getting this information from the WebElement on a Website
         String actualName = "moazza";
         String actualDesignation = "softwareEngineer";
 
-// declare the isntance
+// declare the instance
         SoftAssert soft = new SoftAssert();
         soft.assertEquals(actualName, "moazzam");
         System.out.println("hello i am here");

@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeTest;
 
 public class Annotations_3 {
     @BeforeTest
-    public void btest(){
+    public void beforeTest(){
         System.out.println("i am before TEST");
     }
     @AfterTest

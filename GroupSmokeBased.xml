@@ -12,6 +12,9 @@
         <packages>
             <package name="class01"></package>
             <package name="class02"></package>
+            <package name="class03"></package>
+            <package name="class04"></package>
+            <package name="REVIEW"></package>
         </packages>
     </test>
 </suite>

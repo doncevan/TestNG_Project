@@ -1,5 +1,6 @@
 package class04;
 
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
@@ -23,7 +24,7 @@ public class SoftAssertions extends CommonMethods {
     //    post conditions
     @AfterMethod(alwaysRun = true)
     public void quitBrowser() {
-        driver.quit();
+       closeBrowser();
     }
 
     @Test(groups = "regression")

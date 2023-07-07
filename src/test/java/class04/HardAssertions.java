@@ -27,7 +27,7 @@ public class HardAssertions extends CommonMethods {
     //    post conditions
     @AfterMethod(alwaysRun = true)
     public void quitBrowser() {
-//        driver.quit();
+        closeBrowser();
     }
 
     //    test  case 1:
@@ -52,7 +52,7 @@ public class HardAssertions extends CommonMethods {
 
 //        comparing two strings , which assertion to use
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
-        System.out.println("check that assert number 2 is runing or not");
+        System.out.println("check that assert number 2 is running or not");
 //        check if it is displayed
         boolean errorMsgIsDisplayed = errorMsg.isDisplayed();
         Assert.assertTrue(errorMsgIsDisplayed);

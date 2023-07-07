@@ -34,7 +34,7 @@ public class Annotation2 {
     }
 
     @Test
-    public void ThirdTestCase() {
+    public void CThirdTestCase() {
         System.out.println("i am third test case");
     }
 

@@ -12,10 +12,9 @@ public class DataDrivenTesting {
 
         Object[][] randomData = {
                 {"A", "B", "C"},
-                {"1", " 2", "3"},
+                {"1", "2", "3"},
                 {"0", "0", "100"},
-                {"343", "1e3", "34"}
-        };
+                {"343", "1e3", "34"}};
         return randomData;
     }
 //    col1 inputA

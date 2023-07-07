@@ -1,52 +1,51 @@
 ***********************TestNG*************************
 Assertions:
-we are not using if else condition because even if the test case fails (i.e the conditon doesnt pass in if)
+we are not using if else condition because even if the test case fails (i.e the condition doesn't pass in if)
 the testNG will still show it has passed
 in order to overcome that we use
 Assertions from testNG
 the library is Assert
-and we call differnet types of assertions from it
+and we call different types of assertions from it
 
 first assertion that we learned is
 1.Assert.AssertEquals(String , String)
-it comapres two strings if they are equal test case passed else fails.
+it compares two strings if they are equal test case passed else fails.
 
 2.Assert.AssetTrue(boolean)-->if the boolean is True the Assertion will pass
 								if the boolean is false the assertion will fail
 
 
 1.HardAssertions
-As soon as any assertion FAIlS it doesnt check for other assertions , marks the test as failed and quits
+As soon as any assertion FAIlS it doesn't check for other assertions , marks the test as failed and quits
 
 
-Assert.Assertequals(Expected value,Actual Value)-->if they are equal your test case will pass
+Assert.AssertEquals(Actual Value, Expected value)-->if they are equal your test case will pass
 `												--> if they are not equal your test case is going to FAIL
 
 
 
 2.SoftAssertions:
 
-Soft asseertion will execute all assertions that are there despite of the fact that they FAIL or PASS
-and once it has evaluated them all then it will mark the test case as
-Failed or Passed
+Soft assertion will execute all assertions that are there despite of the fact that they FAIL or PASS
+and once it has evaluated them all, then it will mark the test case as Failed or Passed
 (it marks it failed even if one assertion has failed)
 
-The advantage of using soft asssert is that we can
+The advantage of using soft assert is that we can
 see what errors we are having in other assertions that we make in the same test case
-but we cant see them if we use hardassertion as IT WILL EXIT AS SOON AS THE FIRST ASSERTION FAILS
+but we cant see them if we use hard-assertion as IT WILL EXIT AS SOON AS THE FIRST ASSERTION FAILS
 
 method to implement:
-1. delcare the instance
+1. declare the instance
 softAssert soft =new softAssert();
 2.make assertions
 
 soft.assertEquals();
 
-3. at the end of makiing all assertions
+3. at the end of making all assertions
 you must do
 soft.assertALL()
 
-this evalutes wether the test case has to be marked passed or failed
+this evaluates weather the test case has to be marked passed or failed
 
 
 
@@ -54,7 +53,7 @@ this evalutes wether the test case has to be marked passed or failed
 
 
 TestNg XMl:
-Gives us the control to decide what to exceute from the whole project
+Gives us the control to decide what to execute from the whole project
 
 1. we can decide which package to execute
 2. we can decide which specific class to execute
@@ -72,7 +71,7 @@ Class wise execution of Project suing testNg XML:
 
         <classes>
             <class name="class02.enableDisable"></class>
-            <class name="class01.testNGannotations"></class>
+            <class name="class01.testNGAnnotations"></class>
             <class name="class02.priority"></class>
         </classes>
 
@@ -116,9 +115,9 @@ Task3: package based Execution:
 Task4:
 Group based execution
 helps you run batch execution
-e.g you might want to run all the tst cases catogerized under smoke testing
+e.g you might want to run all the test cases categorized under smoke testing
 or you might want to run all test cases under the regression testing
-or you might want to run all the test cases belonging to login fucntionality
+or you might want to run all the test cases belonging to login functionality
 
 Syntax:
 <suite>
@@ -139,6 +138,6 @@ Syntax:
 
 Note:
 if you have a before or after method annotation associated with
-a particular @test annotaiton marked with some kind of group
-then you must must must mark you BEFORE AND AFTER method
+a particular @test annotation marked with some kind of group
+then you must must mark you BEFORE AND AFTER method
 to (alwaysRun=ture)

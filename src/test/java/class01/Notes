@@ -17,8 +17,8 @@ whenever u run a class , it is going to execute each and every method under the 
 
 by default @Test annotation follows alphabetical order of execution of the test cases
 
-e.g public void Atestcase(); --> will execute first
-    public void Btestcase();-->will execute second
+e.g public void A_testcase(); --> will execute first
+    public void B_testcase();-->will execute second
 
     the green tick indicates that test case has passed
     the red sign indicates the test case has failed
@@ -53,7 +53,7 @@ the code under this annotation is going to execute after every test Method (afte
   we can add our dependencies here for the project
 
 
- 4.In POM.xml how do i ad dependencies?
+ 4.In POM.xml how do i add dependencies?
 
  <dependencies>
         <dependency>
