@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/magre/TestNG_Project/src/test/java/class02/SoftAssertions.java">
         <packages>
-            <package name="class01"></package>
+            <package name="class04"></package>
         </packages>
     </test>
 </suite>

@@ -40,6 +40,7 @@ public class Assertions {
         String actualErrorMsg = errorMsg.getText();
         String expectedErrorMsg = "Password cannot be empty";
         Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
+        System.out.println(actualErrorMsg);
     }
 }
 

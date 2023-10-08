@@ -19,12 +19,8 @@ public class CommonMethods {
     public static void openBrowserAndNavigateToURL(String URL, String browser) {
 
         switch (browser) {
-            case "chrome":
-                driver = new ChromeDriver();
-                break;
-            case "firefox":
-                driver = new FirefoxDriver();
-                break;
+            case "chrome" -> driver = new ChromeDriver();
+            case "firefox" -> driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
         driver.get(URL);

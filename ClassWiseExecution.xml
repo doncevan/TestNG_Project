@@ -7,6 +7,7 @@
             <class name="class01.Annotations"></class>
             <class name="class01.EnableDisable"></class>
             <class name="class02.HardAssertions"></class>
+            <class name="class02.SoftAssertions"></class>
         </classes>
     </test>
 </suite>
